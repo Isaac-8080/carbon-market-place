@@ -11,6 +11,10 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+/* disabling scrollbar for chrome */
+::-webkit-scrollbar {
+  display: none;
+}
 
 nav {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -29,4 +33,92 @@ nav {
   font-family: "Shippori Antique B1", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.changingBGImg1{
+  animation: changingBG 30s linear infinite  ;
+}
+@keyframes changingBG {
+  0% {z-index: -10; opacity: 1; }
+  19% {z-index: -10; opacity: 1; }
+  20% {z-index: -10; opacity: 0; }
+  20% {z-index: -20;}
+  40% {z-index: -30;}
+  60% {z-index: -40; }
+  80% {z-index: -50;}
+  100% {z-index: -60; opacity: 0;}   
+}
+
+.changingBGImg2{
+  animation: changingBG2 30s linear infinite ;
+}
+@keyframes changingBG2 {
+  0% {z-index: -20; }
+  20% {z-index: -30;}
+  40% {z-index: -40;}
+  60% {z-index: -50; }
+  80% {z-index: -60;}
+  89% {z-index: -10; opacity: 0;}
+  90% {z-index: -10; opacity: 1;}
+  100% {z-index: -10;}   
+}
+
+.changingBGImg3{
+  animation: changingBG3 30s linear infinite  ;
+}
+@keyframes changingBG3 {
+  0% {z-index: -30; }
+  20% {z-index: -40;}
+  40% {z-index: -50;}
+  60% {z-index: -60; }
+  79% {z-index: -10; opacity: 0;}
+  80% {z-index: -10; opacity: 1;}
+  89% {z-index: -10; opacity: 1;}
+  90% {z-index: -10; opacity: 0;}
+  100% {z-index: -20;}    
+}
+
+.changingBGImg4{
+  animation: changingBG4 30s linear infinite  ;
+}
+@keyframes changingBG4 {
+  0% {z-index: -40; }
+  20% {z-index: -50;}
+  40% {z-index: -60;}
+  59% {z-index: -10; opacity: 0;}
+  60% {z-index: -10; opacity: 1;}
+  79% {z-index: -10; opacity: 1;}
+  80% {z-index: -10; opacity: 0;}
+  80% {z-index: -20;}
+  100% {z-index: -30;}   
+}
+
+.changingBGImg5{
+  animation: changingBG5 30s linear infinite  ;
+}
+@keyframes changingBG5 {
+  0% {z-index: -50; }
+  20% {z-index: -60;}
+  39% {z-index: -10; opacity: 0;}
+  40% {z-index: -10; opacity: 1;}
+  59% {z-index: -10; opacity: 1;}
+  60% {z-index: -10; opacity: 0;}
+  60% {z-index: -20; }
+  80% {z-index: -30;}
+  100% {z-index: -40;}   
+}
+
+.changingBGImg6{
+  animation: changingBG6 30s linear infinite  ;
+}
+@keyframes changingBG6 {
+  0% {z-index: -60; }
+  19% {z-index: -10; opacity: 0;}
+  20% {z-index: -10; opacity: 1;}
+  39% {z-index: -10; opacity: 1;}
+  40% {z-index: -10; opacity: 0;}
+  40% {z-index: -20;}
+  60% {z-index: -30; }
+  80% {z-index: -40;}
+  100% {z-index: -50;}   
 }
