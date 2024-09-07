@@ -14,6 +14,9 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="" type="image/x-icon" sizes="32x32">
 
+    <!-- material tailwind CSS -->
+    <link rel="stylesheet"href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"/>
+
     <!-- google icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
 
@@ -26,6 +29,11 @@
               colors: {
                 primaryColor: '#CBD1DF',
                 secondaryColor: '#0B3558',
+                headerColor: '#374151',
+                secondaryColor: '#0B3558',
+                tableHeader: '#d0def2',
+                tablePrimary: '#f3f8fe',
+                tableSec: '#a7bad3',
               }
             }
           }
@@ -40,7 +48,7 @@
     <header>
 
       <!-- navigation elements -->
-      <nav id="navbar" class="flex flex-row items-center justify-between h-[60px] px-5 z-[500] fixed top-0 left-0 right-0 md:top-3 md::left-3 md:right-3 h-[60px] rounded-full nav-on-scroll opacity-95">
+      <nav id="navbar" class="flex flex-row items-center justify-between h-[60px] px-5 z-[500] fixed top-3 left-3 right-3 h-[60px] rounded-full nav-on-scroll opacity-95 text-[#FFFFFF]">
 
         <!-- nav brand -->
         <span>
@@ -50,35 +58,31 @@
         <!-- nav links -->
         <ul class="flex flex-row md:items-center gap-5 hidden md:flex">
           <li>
-            <a href="index.html" class="text-primaryColo cursor-pointer text-[14px]">
+            <a href="index.html" class="cursor-pointer text-[14px]">
               Home
             </a>
           </li>
           <li>
-            <a href="about.html" class="text-[#111] hover:text-secondaryColor cursor-pointer text-[14px]">
+            <a href="about.html" class="cursor-pointer text-[14px]">
               About Us
             </a>
           </li>
           <li>
-            <a href="features.html" class="text-[#111] hover:text-secondaryColor cursor-pointer text-[14px]">
+            <a href="features.html" class="cursor-pointer text-[14px]">
               Features
             </a>
           </li>
           <li>
-            <a href="blog.html" class="text-[#111] hover:text-secondaryColor cursor-pointer text-[14px]">
+            <a href="blog.html" class="cursor-pointer text-[14px]">
               Blog
             </a>
           </li>
           <li>
-            <a href="contact.html" class="text-[#111] hover:text-secondaryColor cursor-pointer text-[14px]">
+            <a href="contact.html" class="cursor-pointer text-[14px]">
               Contact Us
             </a>
           </li>
-        </ul>
-
-        <!-- <div class="">
-          <a href="#" class="border px-5 py-1 rounded hidden md:flex bg-gradient-to-r from-primaryColor to-secondaryColor text-[#FFFFFF]" target="_blank" role="button">Sign Up</a>
-        </div> -->
+        </ul>  
 
         <span class="material-symbols-rounded md:hidden cursor-pointer" id="toggleNavIcon">
           menu
@@ -135,11 +139,477 @@
     </header>
     
     <main>
+      <section>
+        <div class="h-[100dvh] relative overflow-hidden     xl:h-[785px]">
+
+          <div class="changingBGImg1 absolute h-[100%] w-[100%]">
+            <img src="https://justenergy.com/wp-content/uploads/2018/12/carbon-footprint-greenhous-gas-emissions-illustraion-1.jpg" alt="background image" class="absolute h-[100%] w-[100%]">
+            <div class="h-[100%] w-[100%] bg-black opacity-70 absolute"></div>
+            <div class="px-10 pt-10  h-[100%] relative     xl:mt-[64px] xl:mx-[119px]">
+              <div class="text-white h-[100%] flex flex-col xl:justify-center ">
+                <h1 class=" text-[26px] font-semibold mb-6    xl:w-[868px] xl:text-[56px] xl:mx-auto">Empowering a Sustainable Future through Carbon Credits</h1>
+                <p class="text-[16px] font-medium    xl:w-[868px] xl:text-[20px] xl:mx-auto">Trade, Buy, and Sell Carbon Credits Seamlessly and Effectively</p>
+                <button class="relative border border-white rounded-md font-semibold bg-primaryColor w-[74%] mx-auto mt-[60px] p-1 cursor-pointer     xl:w-[20%]">Explore Our Marketplace</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="changingBGImg2 absolute h-[100%] w-[100%]">
+            <img src="https://www.petfoodprocessing.net/ext/resources/Articles/2022/12/122122_Corbion-GHG-goals_Lead.jpg?height=667&t=1671627728&width=1080" alt="background image" class="absolute h-[100%] w-[100%]">
+            <div class="h-[100%] w-[100%] bg-black opacity-70 absolute"></div>
+            <div class="px-10 pt-10  h-[100%] relative     xl:mt-[64px] xl:mx-[119px]">
+              <div class="text-white h-[100%] flex flex-col xl:justify-center ">
+                <p class=" text-[26px] font-semibold mb-6    xl:w-[868px] xl:text-[56px] xl:mx-auto">Transform Your Impact with Effortless Carbon Credit Trading.</p>
+                <p class="text-[16px] font-medium    xl:w-[868px] xl:text-[20px] xl:mx-auto">Join our marketplace to seamlessly buy, sell, and trade verified carbon credits, driving sustainability and environmental progress with ease.</p>
+                <button class="relative border border-white rounded-md font-semibold bg-primaryColor w-[74%] mx-auto mt-[60px] p-1 cursor-pointer      xl:w-[20%]">Explore Our Marketplace</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="changingBGImg3 absolute h-[100%] w-[100%]">
+            <img src="./images/heroImage01.jpg" alt="background image" class="absolute h-[100%] w-[100%]">
+            <div class="h-[100%] w-[100%] bg-black opacity-70 absolute"></div>
+            <div class="px-10 pt-10  h-[100%] relative     xl:mt-[64px] xl:mx-[119px]">
+              <div class="text-white h-[100%] flex flex-col xl:justify-center ">
+                <p class=" text-[26px] font-semibold mb-6    xl:w-[868px] xl:text-[56px] xl:mx-auto">Lead the Way in Mitigating Carbon Emissions.</p>
+                <p class="text-[16px] font-medium    xl:w-[868px] xl:text-[20px] xl:mx-auto">Discover how our innovative platform empowers you to take actionable steps towards reducing your carbon footprint through efficient and transparent carbon credit trading.</p>
+                <button class="relative border border-white rounded-md font-semibold bg-primaryColor w-[74%] mx-auto mt-[60px] p-1 cursor-pointer      xl:w-[20%]">Explore Our Marketplace</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="changingBGImg4 absolute h-[100%] w-[100%]">
+            <img src="./images/heroImage02.jpg" alt="background image" class="absolute h-[100%] w-[100%]">
+            <div class="h-[100%] w-[100%] bg-black opacity-70 absolute"></div>
+            <div class="px-10 pt-10  h-[100%] relative     xl:mt-[64px] xl:mx-[119px]">
+              <div class="text-white h-[100%] flex flex-col xl:justify-center ">
+                <p class=" text-[26px] font-semibold mb-6    xl:w-[868px] xl:text-[56px] xl:mx-auto">Our Future Matters: Get Licensed to Produce Less Carbon.</p>
+                <p class="text-[16px] font-medium    xl:w-[868px] xl:text-[20px] xl:mx-auto">Join our platform to obtain your carbon reduction license and take a proactive role in minimizing your carbon footprint while contributing to a sustainable future.</p>
+                <button class="relative border border-white rounded-md font-semibold bg-primaryColor w-[74%] mx-auto mt-[60px] p-1 cursor-pointer      xl:w-[20%]">Explore Our Marketplace</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="changingBGImg5 absolute h-[100%] w-[100%]">
+            <img src="./images/heroImage03.jpg" alt="background image" class="absolute h-[100%] w-[100%]">
+            <div class="h-[100%] w-[100%] bg-black opacity-70 absolute"></div>
+            <div class="px-10 pt-10  h-[100%] relative     xl:mt-[64px] xl:mx-[119px]">
+              <div class="text-white h-[100%] flex flex-col xl:justify-center ">
+                <p class=" text-[24px] font-semibold mb-6    xl:w-[868px] xl:text-[56px] xl:mx-auto">Empower Your Business: Mitigate Carbon Emissions Effectively.</p>
+                <p class="text-[14px] font-medium    xl:w-[868px] xl:text-[20px] xl:mx-auto">Leverage our cutting-edge platform to reduce your carbon footprint through efficient carbon credit solutions and make an impact on our environment.</p>
+                <button class="relative border border-white rounded-md font-semibold bg-primaryColor w-[74%] mx-auto mt-[60px] p-1 cursor-pointer      xl:w-[20%]">Explore Our Marketplace</button> 
+              </div>
+            </div>
+          </div>
+
+          <div class="changingBGImg6 absolute h-[100%] w-[100%]">
+            <img src="./images/heroImage04.jpg" alt="background image" class="absolute h-[100%] w-[100%]">
+            <div class="h-[100%] w-[100%] bg-black opacity-70 absolute"></div>
+            <div class="px-10 pt-10  h-[100%] relative     xl:mt-[64px] xl:mx-[119px]">
+              <div class="text-white h-[100%] flex flex-col xl:justify-center ">
+                <p class=" text-[26px] font-semibold mb-6    xl:w-[868px] xl:text-[56px] xl:mx-auto">Unlock the Future of Carbon Trading.</p>
+                <p class="text-[16px] font-medium    xl:w-[868px] xl:text-[20px] xl:mx-auto">Explore our marketplace to buy, sell, and trade verified carbon credits, driving sustainability and supporting global environmental goals with ease.</p>
+                <button class="relative border border-white rounded-md font-semibold bg-primaryColor w-[74%] mx-auto mt-[60px] p-1 cursor-pointer     xl:w-[20%]">Explore Our Marketplace</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section>
+        <div class="my-[50px] flex flex-col justify-center xl:items-center       xl:my-[80px] xl:flex-row">
+          <div class="mx-2 p-1 bg-white shadow-2xl rounded-md ">
+            <div class="p-2 bg-tableHeader rounded-md">
+              <h3 class="text-[22px] font-semibold text-headerColor    xl:text-[36px]">Hey Johnson <span>👋</span></h3>
+              <p class="text-[12px]    xl:text-[16px]">Welcome back to brand name</p>
+              <div class="flex justify-between  gap-14    ">
+                <div class="flex mt-[20px] items-center mt-[60px]    xl:mt-[80px]">
+                  <img src="./icons/profileImageArtWork.jpg" alt="profile pic" class="h-[50px] rounded-full    xl:h-[70px]">
+                  <div class="px-2">
+                      <h4 class="text-[14px] font-semibold     xl:text-[20px]">Derrode W. Cheale</h4>
+                      <p class="text-[12px] text-gray-600  xl:text-[16px] ">User#001565</p>
+                  </div> 
+                </div>              
+                <div class="flex flex-col justify-end  gap-1">
+                  <img src="./icons/about-svgrepo-com.svg" alt="settins icon" class="h-[22px]     xl:h-[31px]">
+                  <img src="./icons/wallet-plus-svgrepo-com.svg" alt="settins icon" class="h-[22px]    xl:h-[31px]">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 bg-white mx-2 mt-[20px] rounded-md shadow-2xl      xl:-mt-[2px] xl:w-[60%] xl:h-[100%] "> 
+            <div class="flex justify-between items-center">
+              <h2 class="text-sm font-bold text-headerColor     xl:text-[32px]">Latest carbon credits</h2>
+              <a href="#" class="text-[10px] underline text-orange-400 pr-3 xl:text-[16px]">View more</a> 
+            </div>     
+            <div class="grid grid-rows-4 grid-cols-4 gap-1 mt-[10px]   xl:mt-[20px]">
+              <div class="bg-tableSec ">
+                <p class="text-[10px] text-center   xl:text-[24px] xl:font-medium">Project type</p>
+              </div> 
+              <div class="bg-tableSec ">
+                <p class="text-[10px] text-center   xl:text-[24px] xl:font-medium">Volume Sold</p>
+              </div>
+              <div class="bg-tableSec ">
+                <p class="text-[10px] text-center     xl:text-[24px] xl:font-medium">Avg. Price ($)</p>
+              </div>
+              <div class="bg-tableSec ">
+                <p class="text-[10px] text-center     xl:text-[24px] xl:font-medium">Price Range ($)</p>
+              </div>
+              <div class="bg-tableHeader ">
+                <p class="text-[12px] text-center   xl:text-[22px]">Agro-foresty</p>
+              </div>
+              <div class="bg-tableHeader ">
+                <p class="text-[12px] text-center   xl:text-[22px] ">0.1</p>
+              </div>
+              <div class="bg-tableHeader ">
+                <p class="text-[12px] text-center   xl:text-[22px] ">9.9</p>
+              </div>
+              <div class="bg-tableHeader ">
+                <p class="text-[12px] text-center   xl:text-[22px] ">9.9 <span>-</span> 9.9</p>
+              </div>
+              <div class="bg-primaryColor ">
+                <p class="text-[12px] text-center   xl:text-[22px]">Biogas</p>
+              </div>
+              <div class="bg-primaryColor ">
+                <p class="text-[12px] text-center   xl:text-[22px] ">0.1</p>
+              </div>
+              <div class="bg-primaryColor ">
+                <p class="text-[12px] text-center   xl:text-[22px] ">9.9</p>
+              </div>
+              <div class="bg-primaryColor ">
+                <p class="text-[12px] text-center   xl:text-[22px] ">9.9 <span>-</span> 9.9</p>
+              </div>
+              <div class="bg-tableHeader ">
+                <p class="text-[12px] text-center   xl:text-[22px]">Geothermal</p>
+              </div>
+              <div class="bg-tableHeader ">
+                <p class="text-[12px] text-center    xl:text-[22px] ">0.1</p>
+              </div>
+              <div class="bg-tableHeader ">
+                <p class="text-[12px] text-center    xl:text-[22px] ">9.9</p>
+              </div>
+              <div class="bg-tableHeader ">
+                <p class="text-[12px] text-center    xl:text-[22px] ">9.9 <span>-</span> 9.9</p>
+              </div>
+              <div class="bg-primaryColor ">
+                <p class="text-[12px] text-center   xl:text-[22px]">Biomass</p>
+              </div>
+              <div class="bg-primaryColor ">
+                <p class="text-[12px] text-center   xl:text-[22px] ">0.1</p>
+              </div>
+              <div class="bg-primaryColor ">
+                <p class="text-[12px] text-center   xl:text-[22px] ">9.9</p>
+              </div>
+              <div class="bg-primaryColor ">
+                <p class="text-[12px] text-center   xl:text-[22px] ">9.9 <span>-</span> 9.9</p>
+              </div>
+            </div>    
+            
+          </div>
+        </div>
+        <!-- <section>
+          <div class="my-[50px] px-2      xl:my-[80px] ">
+            <table class="border-collapse mx-auto shadow-2xl bg-white text-left">
+              <thead>
+                <tr>
+                  <th class="text-[0.8rem] xl:text-[22px] bg-tableHeader px-[2.5px] py-[3px] ">Porject type</th>
+                  <th class="text-[0.8rem] xl:text-[22px] bg-tableHeader px-[2.5px] py-[3px] ">Volume Sold</th>
+                  <th class="text-[0.8rem] xl:text-[22px] bg-tableHeader px-[2.5px] py-[3px]">Average Price ($)</ class="text-[0.8rem] xl:text-[22px]">
+                  <th class="text-[0.8rem] xl:text-[22px] bg-tableHeader px-[2.5px] py-[3px]">Price Range ($)</th>
+                </tr>
+              </thead> 
+              <tbody>
+                <tr class="bg-tableSec">
+                  <td class="text-[0.8rem] xl:text-[20px]">Agro-foresty</td>
+                  <td class="text-[0.8rem] xl:text-[20px]">0.1</td>
+                  <td class="text-[0.8rem] xl:text-[20px]">9.9</td>
+                  <td class="text-[0.8rem] xl:text-[20px]">9.9 - 9.9</td>
+                </tr>
+                <tr>
+                  <td class="text-[0.8rem] xl:text-[20px]">Biogas</td>
+                  <td class="text-[0.8rem] xl:text-[20px]">0.1</td>
+                  <td class="text-[0.8rem] xl:text-[20px]">9.9</td>
+                  <td class="text-[0.8rem] xl:text-[20px]">9.9 - 9.9</td>
+                </tr>
+                <tr>
+                  <td class="text-[0.8rem] xl:text-[20px]">Geothermal</td>
+                  <td class="text-[0.8rem] xl:text-[20px]">0.1</td>
+                  <td class="text-[0.8rem] xl:text-[20px]">9.9</td>
+                  <td class="text-[0.8rem] xl:text-[20px]">9.9 - 9.9</td>
+                </tr>
+                <tr>
+                  <td class="text-[0.8rem] xl:text-[20px]">Biomass</td>
+                  <td class="text-[0.8rem] xl:text-[20px]">0.1</td>
+                  <td class="text-[0.8rem] xl:text-[20px]">9.9</td>
+                  <td class="text-[0.8rem] xl:text-[20px]">9.9 - 9.9</td>
+                </tr>
+                <tr>
+                  <td class="text-[0.8rem] xl:text-[20px]">REDD+</td>
+                  <td class="text-[0.8rem] xl:text-[20px]">0.1</td>
+                  <td class="text-[0.8rem] xl:text-[20px]">9.9</td>
+                  <td class="text-[0.8rem] xl:text-[20px]">9.9 - 9.9</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section> -->
+      </section>
+      <!-- key features section 4 cards -->
+      <section >
+        <h2 class="text-center my-5 font-semibold subHeading text-xl text-headerColor     xl:text-[32px]  xl:my-20">Key Features of Brand Name</h2> 
+        <div class="px-2 flex flex-col    xl:flex-row xl:gap-10 xl:mx-[110px]">          
+          <div class="relative flex flex-col justify-between  my-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-[100%]">
+            <div class="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+              <img src="./images/easy trading.jpg"
+                alt="card-image" class="object-cover h-[110%] w-[150%]" />
+            </div>
+            <div class="p-6">
+              <h5 class="block mb-2 text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                Easy Trading Platform
+              </h5>
+              <p class="block text-base antialiased font-light leading-relaxed text-inherit xl:text-[12px]">
+                Our carbon credit marketplace offers an Easy Trading Platform for simplified buying, selling, and trading of carbon credits. It features an intuitive interface, real-time updates, and transparent data to facilitate informed decision-making for both new and experienced traders.
+              </p>
+            </div>
+            <div class="p-6 pt-0">
+              <button
+                class="align-middle select-none font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+                type="button">
+                Read More
+              </button>
+            </div>
+          </div>
+          <div class="relative flex flex-col justify-between my-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-[100%]">
+            <div class="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+              <img src="./images/verified.jpeg"
+                alt="card-image" class="object-cover h-[100%] w-[200%]  "/>
+            </div>
+            <div class="p-6">
+              <h5 class="block mb-2 text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                Verified Carbon Credits
+              </h5>
+              <p class="block text-base antialiased font-light leading-relaxed text-inherit xl:text-[12px]">
+                Our credits undergo rigorous validatations through internationally recognized standards to ensure authenticity and real environmental impact. The platform source credits from reputable projects that undergo thorough verification processes, so users can focus on carbon reduction goals.
+              </p>
+            </div>
+            <div class="p-6 pt-0">
+              <button
+                class="align-middle select-none font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+                type="button">
+                Read More
+              </button>
+            </div>
+          </div> 
+          <div class="relative flex flex-col justify-between my-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-[100%]">
+            <div class="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+              <img src="./images/transparent.jpg"
+                alt="card-image" class=" object-cover  h-[110%] w-[150%]"  />
+            </div>
+            <div class="p-6">
+              <h5 class="block mb-2 text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                Transparent Pricing
+              </h5>
+              <p class="block text-base antialiased font-light leading-relaxed text-inherit xl:text-[12px]">
+                We ensure clear pricing at every step, providing detailed information and real-time updates. With no hidden fees, you can make informed decisions confidently, supporting fair trading practices and know how it aligns with current market conditions.
+              </p>
+            </div>
+            <div class="p-6 pt-0">
+              <button
+                class="align-middle select-none font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+                type="button">
+                Read More
+              </button>
+            </div>
+          </div> 
+          <div class="relative flex flex-col justify-between my-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-[100%]">
+            <div class="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+              <img src="./images/global reach.jpg"
+                alt="card-image" class="object-cover h-[110%] w-[150%] " />
+            </div>
+            <div class="p-6">
+              <h5 class="block mb-2 text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                Global Reach
+              </h5>
+              <p class="block text-base antialiased font-light leading-relaxed text-inherit xl:text-[12px]">
+                We boast global reach, connecting buyers and sellers worldwide. It supports international transactions and enables users to access a diverse range of carbon credits and opportunities. Participation contributes to global sustainability efforts and maximizes impact on environmental goals.
+              </p>
+            </div>
+            <div class="p-6 pt-0">
+              <button
+                class="align-middle select-none font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+                type="button">
+                Read More
+              </button>
+            </div>
+          </div> 
+        </div>
+      </section>
+      <section>
+        <div class="flex flex-col relative gap-4   xl:flex-row xl:mx-[115px] xl:py-[100px] xl:items-center  xl:h-[820px]">
+          <div class="m-2 relative rounded-xl overflow-hidden h-[320px] my-[40px]   xl:w-[50%]   xl:h-[100%]">
+            <img src="./images/about-BG.jpg" alt="forest background" class="absolute xl:h-[100%] w-[100%] xl:object-cover  ">
+            <div class="bg-black opacity-50  h-[100%] w-[100%] absolute "></div>
+            <div class="flex flex-col w-[74%] my-10 h-[90%] relative text-white  justify-center mx-auto xl:w-[60%]">
+              <h2 class=" uppercase place-self-center text-[3.5rem] leading-[60px]   font-bold text-center xl:text-[8rem] xl:leading-[130px] ">About Us</h2>
+              <hr>
+              <p class="text-[10px] text-center   xl:text-[20px]">We are a carbon credit marketplace company that connects buyers and sellers of carbon credits. Our mission is to help combat climate change by creating and providing a platform for companies to offset their emmisions.</p>
+              <button class="relative text-[12px] py-1 px-2 text-black font-semibold my-2 bg-white w-[36%] place-self-center rounded-full hover:text-white transition duration-700  hover:bg-black hover:transition hover:duration-700    xl:text-[16px] xl:mt-5 xl:py-2">Learn More</button>
+            </div>
+          </div>
+          <div class="m-2 bg-white h-[80vh] my-[40px] rounded-xl overflow-hidden       xl:w-[50%] xl:h-[100%]">
+            <h3 class="text-center  font-semibold subHeading text-lg text-headerColor my-[20px]    xl:text-[22px] xl:my-[50px]">See what our customers are saying!</h3> 
+            <div class="h-[80%] w-[100%] px-2 flex justify-center overflow-x-scroll    mt-[20px]  ">
+              <div class="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-clip-border text-gray-700 shadow-none ">
+                <div class="">
+                  <div class="relative flex items-center gap-4 pt-0 pb-8 mx-0 mt-4 overflow-hidden text-gray-700 bg-transparent shadow-none rounded-xl bg-clip-border">
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80" alt="Tania Andrew" class="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center" />
+                    <div class="flex w-full flex-col gap-0.5">
+                      <div class="flex items-center justify-between">
+                        <h5 class="block font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                          Tania Andrew
+                        </h5>
+                        <div class="flex items-center gap-0 5">
+                          <img src="./icons/star.svg" alt="" class="h-[20px]">
+                          <img src="./icons/star.svg" alt="" class="h-[20px]">
+                          <img src="./icons/star.svg" alt="" class="h-[20px]">
+                          <img src="./icons/star.svg" alt="" class="h-[20px]">
+                          <img src="./icons/star.svg" alt="" class="h-[20px]"> 
+                        </div>
+                      </div>
+                      <p class="block font-sans text-base antialiased font-light leading-relaxed text-blue-gray-900">
+                        Frontend Lead @ Google
+                      </p>
+                    </div>
+                  </div>
+                  <div class="p-0 mb-6">
+                    <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+                      "I found solution to all my design needs from Creative Tim. I use them as a freelancer in my hobby projects for fun! And its really affordable, very humble guys !!!"
+                    </p>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="relative flex items-center gap-4 pt-0 pb-8 mx-0 mt-4 overflow-hidden text-gray-700 bg-transparent shadow-none rounded-xl bg-clip-border">
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80" alt="Tania Andrew" class="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center" />
+                    <div class="flex w-full flex-col gap-0.5">
+                      <div class="flex items-center justify-between">
+                        <h5 class="block font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                          Tania Andrew
+                        </h5>
+                        <div class="flex items-center gap-0 5">
+                          <img src="./icons/star.svg" alt="" class="h-[20px]">
+                          <img src="./icons/star.svg" alt="" class="h-[20px]">
+                          <img src="./icons/star.svg" alt="" class="h-[20px]">
+                          <img src="./icons/star.svg" alt="" class="h-[20px]">
+                          <img src="./icons/star.svg" alt="" class="h-[20px]"> 
+                        </div>
+                      </div>
+                      <p class="block font-sans text-base antialiased font-light leading-relaxed text-blue-gray-900">
+                        Frontend Lead @ Google
+                      </p>
+                    </div>
+                  </div>
+                  <div class="p-0 mb-6">
+                    <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+                      "I found solution to all my design needs from Creative Tim. I use them as a freelancer in my hobby projects for fun! And its really affordable, very humble guys !!!"
+                    </p>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="relative flex items-center gap-4 pt-0 pb-8 mx-0 mt-4 overflow-hidden text-gray-700 bg-transparent shadow-none rounded-xl bg-clip-border">
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80" alt="Tania Andrew" class="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center" />
+                    <div class="flex w-full flex-col gap-0.5">
+                      <div class="flex items-center justify-between">
+                        <h5 class="block font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                          Tania Andrew
+                        </h5>
+                        <div class="flex items-center gap-0 5">
+                          <img src="./icons/star.svg" alt="" class="h-[20px]">
+                          <img src="./icons/star.svg" alt="" class="h-[20px]">
+                          <img src="./icons/star.svg" alt="" class="h-[20px]">
+                          <img src="./icons/star.svg" alt="" class="h-[20px]">
+                          <img src="./icons/star.svg" alt="" class="h-[20px]"> 
+                        </div>
+                      </div>
+                      <p class="block font-sans text-base antialiased font-light leading-relaxed text-blue-gray-900">
+                        Frontend Lead @ Google
+                      </p>
+                    </div>
+                  </div>
+                  <div class="p-0 mb-6">
+                    <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+                      "I found solution to all my design needs from Creative Tim. I use them as a freelancer in my hobby projects for fun! And its really affordable, very humble guys !!!"
+                    </p>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="relative flex items-center gap-4 pt-0 pb-8 mx-0 mt-4 overflow-hidden text-gray-700 bg-transparent shadow-none rounded-xl bg-clip-border">
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80" alt="Tania Andrew" class="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center" />
+                    <div class="flex w-full flex-col gap-0.5">
+                      <div class="flex items-center justify-between">
+                        <h5 class="block font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                          Tania Andrew
+                        </h5>
+                        <div class="flex items-center gap-0 5">
+                          <img src="./icons/star.svg" alt="" class="h-[20px]">
+                          <img src="./icons/star.svg" alt="" class="h-[20px]">
+                          <img src="./icons/star.svg" alt="" class="h-[20px]">
+                          <img src="./icons/star.svg" alt="" class="h-[20px]">
+                          <img src="./icons/star.svg" alt="" class="h-[20px]"> 
+                        </div>
+                      </div>
+                      <p class="block font-sans text-base antialiased font-light leading-relaxed text-blue-gray-900">
+                        Frontend Lead @ Google
+                      </p>
+                    </div>
+                  </div>
+                  <div class="p-0 mb-6">
+                    <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+                      "I found solution to all my design needs from Creative Tim. I use them as a freelancer in my hobby projects for fun! And its really affordable, very humble guys !!!"
+                    </p>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="relative flex items-center gap-4 pt-0 pb-8 mx-0 mt-4 overflow-hidden text-gray-700 bg-transparent shadow-none rounded-xl bg-clip-border">
+                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1480&amp;q=80" alt="Tania Andrew" class="relative inline-block h-[58px] w-[58px] !rounded-full  object-cover object-center" />
+                    <div class="flex w-full flex-col gap-0.5">
+                      <div class="flex items-center justify-between">
+                        <h5 class="block font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                          Tania Andrew
+                        </h5>
+                        <div class="flex items-center gap-0 5">
+                          <img src="./icons/star.svg" alt="" class="h-[20px]">
+                          <img src="./icons/star.svg" alt="" class="h-[20px]">
+                          <img src="./icons/star.svg" alt="" class="h-[20px]">
+                          <img src="./icons/star.svg" alt="" class="h-[20px]">
+                          <img src="./icons/star.svg" alt="" class="h-[20px]"> 
+                        </div>
+                      </div>
+                      <p class="block font-sans text-base antialiased font-light leading-relaxed text-blue-gray-900">
+                        Frontend Lead @ Google
+                      </p>
+                    </div>
+                  </div>
+                  <div class="p-0 mb-6">
+                    <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+                      "I found solution to all my design needs from Creative Tim. I use them as a freelancer in my hobby projects for fun! And its really affordable, very humble guys !!!"
+                    </p>
+                  </div>
+                </div>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </section>
 
     </main>
 
   </div>
     
   <script src="./scripts/main.js"></script>
+
+  <!-- Material tailwind CSS script -->
+  <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
+
 </body>
 </html>

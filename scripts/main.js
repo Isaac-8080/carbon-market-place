@@ -8,13 +8,22 @@ document.addEventListener('scroll', () => {
     getNavbar.classList.remove('nav-on-scroll');
 
     getNavbar.classList.add('bg-[#FFFFFF]');
+
+    getNavbar.classList.remove('text-[#FFFFFF]');
+
+    getNavbar.classList.add('text-[#000000]');
+    
     
   } else {
     
     getNavbar.classList.remove('bg-[#FFFFFF]');
-
+    
     getNavbar.classList.add('nav-on-scroll');
+   
+    getNavbar.classList.add('text-[#FFFFFF]');
 
+    getNavbar.classList.remove('text-[#000000]');
+    
   }
 
 });
