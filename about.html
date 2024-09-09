@@ -33,7 +33,7 @@
     </script>
 
 </head>
-<body class="bg-primaryColor">
+<body class="">
 
   <div>
 
@@ -44,41 +44,36 @@
 
         <!-- nav brand -->
         <span>
-          <img src="./icons/blog.png" class="w-[30px]" alt="brand-image">
+          <p class="font-bold">Brand name</p>
         </span>
 
         <!-- nav links -->
         <ul class="flex flex-row md:items-center gap-5 hidden md:flex">
           <li>
-            <a href="index.html" class="cursor-pointer text-[14px]">
+            <a href="index.html" class="cursor-pointer hover:text-[#D0DEF2] text-[14px]">
               Home
             </a>
           </li>
           <li>
-            <a href="about.html" class="cursor-pointer text-[14px]">
+            <a href="about.html" class="cursor-pointer hover:text-[#D0DEF2] text-[14px]">
               About Us
             </a>
           </li>
           <li>
-            <a href="features.html" class="cursor-pointer text-[14px]">
-              Features
+            <a href="market.html" class="cursor-pointer hover:text-[#D0DEF2] text-[14px]">
+              Market Place
             </a>
           </li>
           <li>
-            <a href="blog.html" class="cursor-pointer text-[14px]">
-              Blog
-            </a>
-          </li>
-          <li>
-            <a href="contact.html" class="cursor-pointer text-[14px]">
+            <a href="contact.html" class="cursor-pointer hover:text-[#D0DEF2] text-[14px]">
               Contact Us
             </a>
           </li>
         </ul>
 
-        <!-- <div class="">
+        <div class="">
           <a href="#" class="border px-5 py-1 rounded hidden md:flex bg-gradient-to-r from-primaryColor to-secondaryColor text-[#FFFFFF]" target="_blank" role="button">Sign Up</a>
-        </div> -->
+        </div>
 
         <span class="material-symbols-rounded md:hidden cursor-pointer" id="toggleNavIcon">
           menu
@@ -93,7 +88,7 @@
         <ul class="p-5 flex flex-col gap-5">
 
           <span>
-            <img src="./icons/blog.png" class="w-[30px]" alt="brand-image">
+            <p class="text-2xl font-bold">Brand name</p>
           </span>
 
           <li class="flex flex-row items-center gap-2">
@@ -111,14 +106,7 @@
           <li class="flex flex-row items-center gap-2">
             <img src="./icons/feature.png" class="w-[20px] opacity-95" alt="" srcset="">
             <a href="features.html" class="text-[#111] hover:text-secondaryColor cursor-pointer font-semibold text-[18px]">
-              Features
-            </a>
-          </li>
-          
-          <li class="flex flex-row items-center gap-2">
-            <img src="./icons/blog.png" class="w-[20px] opacity-95" alt="" srcset="">
-            <a href="blog.html" class="text-[#111] hover:text-secondaryColor cursor-pointer font-semibold text-[18px]">
-              Blog
+              Market Place
             </a>
           </li>
           <li class="flex flex-row items-center gap-2">
@@ -127,16 +115,19 @@
               Contact Us
             </a>
           </li>
+
           <div id="exit-nav"></div>
+
         </ul>
 
       </div>
   
     </header>
     
-    <main>
+    <main class="bg-[#F0F0F0]">
 
-      <div class="flex flex-row w-full items-center justify-center h-[70dvh]">
+      <!-- hero section -->
+      <section class="flex flex-row w-full items-center justify-center h-[70dvh]">
 
         <div class="relative w-[100%] h-[100%]">
           <img src="https://media.istockphoto.com/id/1494812295/photo/teamwork-manager-portrait-and-diversity-of-office-team-happy-about-hr-collaboration-we-are.jpg?s=612x612&w=0&k=20&c=EG7XdM2_ISMoxHdYjGr96Ig69XoV3mIHFCAgQ9Guo94=" class="w-[100%] h-[100%] object-cover" alt="" srcset="">
@@ -147,8 +138,115 @@
         <div class="absolute w-[100%] h-[70dvh] bg-[#000000] opacity-75"></div>
 
         <div class="absolute w-[100%] h-[70dvh] content-center text-center font-black text-7xl text-[#FFFFFF] select-none">About Us</div>
+        
+      </section>
+      
+      <section class="mt-[100px] md:px-[100px] lg:px-[150px] p-5 pb-[50px]">
 
-      </div>
+        <div>
+
+          <h2 class=" content-center font-black text-4xl text-[#374151]">About Us</h2>
+          
+          <p>
+            Welcome to [Company Name], a leading carbon credit marketplace dedicated to combating climate change. Our mission is simple: to empower businesses to take meaningful steps towards a sustainable future by providing an easy-to-use platform that connects buyers and sellers of carbon credits.
+          </p>
+
+        </div>
+        
+        <div>
+
+          <h2 class=" content-center font-black text-4xl text-[#374151] mt-10">Our Mission</h2>
+          
+          <p>
+            At [Company Name], we believe that every company has a role to play in the fight against climate change. By offering a transparent marketplace, we make it easier for businesses to offset their carbon emissions and contribute to global environmental goals. Our platform allows companies to purchase certified carbon credits from projects that reduce greenhouse gases, helping them meet their sustainability targets.
+          </p>
+
+        </div>
+        
+        <div>
+
+          <h2 class=" content-center font-black text-4xl text-[#374151] mt-10">What We Offer</h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-3">
+            <!-- offer 1 -->
+            <div class="rounded-lg flex flex-row items-center justify-center relative">
+              <img src="./images/buyer.jpg" class="w-[100%] h-[100%] rounded-lg object-cover" alt="buyer image" srcset="">
+              <div class="absolute w-[100%] h-[100%] bg-[black] opacity-80 rounded-lg"></div>
+              <div class="absolute w-[100%] h-[100%] text-[#FFFFFF] flex flex-row items-center rounded-lg">
+                <p class="p-5 text-lg">
+                  <span class="font-bold text-[#FFFFFF]">Buyers</span>
+                  can explore a range of verified carbon credit options to offset their emissions and enhance their sustainability efforts.
+                </p>
+              </div>
+            </div>
+
+            <!-- offer 2 -->
+            <div class="rounded-lg flex flex-row items-center justify-center relative">
+              <img src="./images/seller.jpg" class="w-[100%] h-[100%] rounded-lg object-cover" alt="" srcset="">
+              <div class="absolute w-[100%] h-[100%] bg-[black] opacity-80 rounded-lg"></div>
+              <div class="absolute w-[100%] h-[100%] text-[#FFFFFF] flex flex-row items-center rounded-lg">
+                <p class="p-5 text-lg">
+                  <span class="font-bold text-[#FFFFFF]">Sellers</span>
+                  can showcase their climate-positive projects, generating revenue by selling carbon credits to businesses committed to environmental responsibility.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        
+        <div>
+
+          <h2 class=" content-center font-black text-4xl text-[#374151] mt-10">Why Choose Us?</h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-3">
+            <!-- Why Choose Us 1 -->
+            <div class="rounded-lg flex flex-row items-center justify-center relative">
+              <img src="./images/Trust.jpg" class="w-[100%] h-[100%] rounded-lg object-cover" alt="buyer image" srcset="">
+              <div class="absolute w-[100%] h-[100%] bg-[black] opacity-80 rounded-lg"></div>
+              <div class="absolute w-[100%] h-[100%] text-[#FFFFFF] flex flex-row items-center rounded-lg">
+                <p class="p-5 text-lg">
+                  <span class="font-bold text-[#FFFFFF]">Trust & Transparency</span><br>
+                  We ensure that all carbon credits listed on our marketplace are thoroughly vetted and verified, guaranteeing their impact.
+                </p>
+              </div>
+            </div>
+
+            <!-- Why Choose Us 2 -->
+            <div class="rounded-lg flex flex-row items-center justify-center relative">
+              <img src="./images/Simple.jpg" class="w-[100%] h-[100%] rounded-lg object-cover" alt="" srcset="">
+              <div class="absolute w-[100%] h-[100%] bg-[black] opacity-80 rounded-lg"></div>
+              <div class="absolute w-[100%] h-[100%] text-[#FFFFFF] flex flex-row items-center rounded-lg">
+                <p class="p-5 text-lg">
+                  <span class="font-bold text-[#FFFFFF]">Simple & Accessible</span><br>
+                  Our user-friendly platform streamlines the carbon credit purchasing process, making it easy for companies of all sizes to participate in carbon offsetting.
+                </p>
+              </div>
+            </div>
+            
+            <!-- Why Choose Us 3 -->
+            <div class="rounded-lg flex flex-row items-center justify-center relative">
+              <img src="./images/Commitment.jpg" class="w-[100%] h-[100%] rounded-lg object-cover" alt="" srcset="">
+              <div class="absolute w-[100%] h-[100%] bg-[black] opacity-80 rounded-lg"></div>
+              <div class="absolute w-[100%] h-[100%] text-[#FFFFFF] flex flex-row items-center rounded-lg">
+                <p class="p-5 text-lg">
+                  <span class="font-bold text-[#FFFFFF]">Commitment to Sustainability</span><br>
+                  We are driven by a passion to make a real difference in the fight against climate change. Every transaction on our platform supports the global transition to a low-carbon economy.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <p class="mt-10">
+            Join us on our journey to create a cleaner, greener planet. Together, we can make a lasting impact.
+            <br><span class="font-bold text-[18px]">Offset Your Emissions, Build a Sustainable Future.</span>
+          </p>
+
+        </div>
+
+      </section>
 
     </main>
 
