@@ -161,3 +161,19 @@ nav {
   80% {z-index: -40;}
   100% {z-index: -50;}   
 }
+
+.cardSlide{
+  animation: cardSlide 3s linear ;
+}
+
+@keyframes cardSlide {
+  0% {z-index: -60; }
+  19% {z-index: -10; opacity: 0;}
+  20% {z-index: -10; opacity: 1;}
+  39% {z-index: -10; opacity: 1;}
+  40% {z-index: -10; opacity: 0;}
+  40% {z-index: -20;}
+  60% {z-index: -30; }
+  80% {z-index: -40;}
+  100% {z-index: -50;}   
+}
