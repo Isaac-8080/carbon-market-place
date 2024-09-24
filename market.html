@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta description -->
+    <meta name="description" content="">
+    <!-- meta keywords -->
+    <meta name="keywords" content="">
+    <title>Carbon Credit Markek Place</title>
+    <!-- vanilla css -->
+    <link rel="stylesheet" href="./stylesheets/style.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="" type="image/x-icon" sizes="32x32">
+
+    <!-- material tailwind CSS -->
+    <link rel="stylesheet"href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"/>
+
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primaryColor: '#f0f0f0',
+                secondaryColor: '#0B3558',
+                headerColor: '#374151',
+                tableHeader: '#d0def2',
+                tablePrimary: '#f3f8fe',
+                tableSec: '#a7bad3',
+                buttomColor: '#CBD1DF',
+              }
+            }
+          }
+        }
+    </script>
+
+</head>
+<body class="bg-primaryColor">
+
+  <div>
+
+    <header>
+
+      <!-- navigation elements -->
+      <nav id="navbar" class="flex flex-row items-center justify-between h-[60px] px-5 z-[500] fixed text-[#FFFFFF] top-3 left-3 right-3 h-[60px] rounded-full nav-on-scroll opacity-95">
+
+        <!-- nav brand -->
+        <span>
+          <p class="font-bold">Brand name</p>
+        </span>
+
+        <!-- nav links -->
+        <ul class="flex flex-row md:items-center gap-5 hidden md:flex">
+          <li>
+            <a href="index.html" class="cursor-pointer hover:text-[#D0DEF2] text-[14px]">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="about.html" class="cursor-pointer hover:text-[#D0DEF2] text-[14px]">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="./market.html" class="cursor-pointer hover:text-[#D0DEF2] text-[14px]">
+              Market Place
+            </a>
+          </li>
+          <li>
+            <a href="contact.html" class="cursor-pointer hover:text-[#D0DEF2] text-[14px]">
+              Contact Us
+            </a>
+          </li>
+        </ul>
+
+        <div class="">
+          <a href="#" class="border px-5 py-1 rounded hidden md:flex bg-gradient-to-r from-primaryColor to-secondaryColor text-[#FFFFFF]" target="_blank" role="button">Sign Up</a>
+        </div>
+
+        <span class="material-symbols-rounded md:hidden cursor-pointer" id="toggleNavIcon">
+          menu
+        </span>
+
+      </nav>
+
+      <!-- small screens nav -->
+      <div class="sm-navbar bg-[#FFFFFF] shadow-lg md:hidden z-[500]">
+
+        <!-- sm nav links -->
+        <ul class="p-5 flex flex-col gap-5">
+
+          <span>
+            <p class="text-2xl font-bold">Brand name</p>
+          </span>
+
+          <li class="flex flex-row items-center gap-2">
+            <img src="./icons/home.png" class="w-[20px] opacity-95" alt="" srcset="">
+            <a href="index.html" class="text-[#111] hover:text-secondaryColor cursor-pointer font-semibold text-[18px]">
+              Home
+            </a>
+          </li>
+          <li class="flex flex-row items-center gap-2">
+            <img src="./icons/info.png" class="w-[20px] opacity-95" alt="" srcset="">
+            <a href="about.html" class="text-primaryColor cursor-pointer font-semibold text-[18px]">
+              About Us
+            </a>
+          </li>
+          <li class="flex flex-row items-center gap-2">
+            <img src="./icons/feature.png" class="w-[20px] opacity-95" alt="" srcset="">
+            <a href="features.html" class="text-[#111] hover:text-secondaryColor cursor-pointer font-semibold text-[18px]">
+              Market Place
+            </a>
+          </li>
+          <li class="flex flex-row items-center gap-2">
+            <img src="./icons/contact.png" class="w-[20px] opacity-95" alt="" srcset="">
+            <a href="contact.html" class="text-[#111] hover:text-secondaryColor cursor-pointer font-semibold text-[18px]">
+              Contact Us
+            </a>
+          </li>
+
+          <div id="exit-nav"></div>
+
+        </ul>
+
+      </div>
+  
+    </header>
+    <main>
+      <div class="h-[100vh] w-[100vw] bg-secondaryColor flex justify-center items-center">
+        <h1 class="relative text-white text-[40px] md:text-[80px]">Coming Soon...</h1>
+      </div>
+    </main>
+  </div>
+
+  <script src="./scripts/main.js"></script>
+</body>
+</html>
